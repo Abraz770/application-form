@@ -1,0 +1,59 @@
+<style>
+  .form-box {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+  }
+
+  .form-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #222;
+  }
+
+  .form-box input,
+  .form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  .form-box textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .form-box button {
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .form-box button:hover {
+    background: darkred;
+  }
+</style>
+
+<div class="form-box">
+  <h2>Application Form</h2>
+
+  <form action="https://formspree.io/f/xaqdlowl" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Why do you want to apply?" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
